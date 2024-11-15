@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+html { scroll-behavior: smooth;} /* Enables smooth scrolling */
+body {
+  background-color: #f4f4f4; 
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  color: #fff;
+  background: url('./Assets/background.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /*background: rgba(0, 0, 0, 0.5);  Semi-transparent background */
+  color: white;
+  font-size: small;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+  color: #1ec6b7;
+}
+
+.main .overlay {
+  flex-grow: 1; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  color: rgb(208, 205, 205);
+}
+
+.mid-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #1ec6b7;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: small;
+}
+
+.mid-button:hover {
+  background-color: #17a398;
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.textContainer {
+  padding: 75px;
+  width: 40%;
+}
+.intro {
+  color: #1ec6b7;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.section2 h1 {
+  /* padding: 10px; */
+  color: rgb(65, 64, 64);
+  font-weight: bolder;
+}
+.p1, .p2{
+  padding: 10px 0;
+  color: rgb(155, 155, 155);
+}
+.p2 {
+  font-style: italic;
+}
+.author-name {
+  font-weight: bolder;
+  padding: 10px;
+}
+.img-container {
+  position: relative;
+  width: 600px; 
+  height: 400px; 
+  overflow: hidden; 
+}
+
+.section2-image {
+  width: 100%; 
+  height: 100%; 
+  transition: transform 0.5s ease; 
+}
+
+.section2-image:hover {
+  transform: scale(1.2);
+}
+
+
