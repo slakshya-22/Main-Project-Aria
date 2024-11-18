@@ -6,7 +6,7 @@
 }
 html {
   scroll-behavior: smooth;
-} 
+}
 body {
   background-color: #f4f4f4;
 }
@@ -31,6 +31,15 @@ body {
   color: white;
   font-size: small;
   font-weight: bold;
+
+  /* After scrolling */
+  
+  /* position: fixed;  
+  top: 0; 
+  left: 0;  
+  width: 100%; 
+  z-index: 1000;  */
+  
 }
 
 .logo {
@@ -177,25 +186,24 @@ body {
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   /* margin: 0; 
   padding: 0;  */
-  
 }
 .hexa i {
-  font-size: 2rem; 
-  color: #fff; 
+  font-size: 2rem;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%; 
-  height: 100%; 
+  width: 100%;
+  height: 100%;
 }
 .icon-content {
   text-align: center;
 }
 .i-heading {
-  font-size: 1.2rem; 
-  font-weight: bold; 
-  color: #333; 
-  margin: 0; 
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
   text-align: left;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -203,10 +211,10 @@ body {
   font-size: 1.2rem;
 }
 .i-text {
-  font-size: 0.9rem; 
-  color: rgb(155, 155, 155);; 
-  margin: 0; 
-  line-height: 1.5; 
+  font-size: 0.9rem;
+  color: rgb(155, 155, 155);
+  margin: 0;
+  line-height: 1.5;
   text-align: left;
   padding-left: 110px;
   padding-bottom: 100px;
@@ -216,7 +224,7 @@ body {
 }
 
 .sec3-heading {
-  text-align: center; /* Centers inline text elements */
+  text-align: center; 
 }
 
 .p-services {
@@ -234,12 +242,294 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 450px; 
-  margin: 0 auto; 
+  width: 450px;
+  margin: 0 auto;
   color: rgb(76, 75, 75);
 }
 
 .sec3-heading h2 {
   font-size: 1.7rem;
-  text-align: center; 
+  text-align: center;
 }
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 350px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.cards img {
+  height: 200px;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card-content h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.2rem;
+  color: rgb(76, 75, 75);
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
+  padding: 10px 30px;
+  text-align: justify;
+  line-height: 1.5;
+  
+}
+.card-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+  padding-left: 30px; 
+  font-size: 0.9rem;
+}
+
+.card-content li {
+  color: #777;
+  list-style: none;
+  display: flex;
+  align-items: center; 
+  margin: 0; 
+  padding: 0; 
+}
+
+.card-content li::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: #14bf98;
+  margin-right: 10px; 
+  margin-bottom: 0; 
+  border-radius: 2px; 
+}
+.card-content h4 {
+  padding-top: 30px;
+  color: rgb(76, 75, 75);
+}
+.card-content strong {
+  color: #14bf98;
+}
+
+.details{
+  height: 40px;
+  width: 110px;
+  position: relative;
+  background-color: #14bf98;
+  color: white;
+  border: 2px solid #14bf98;
+  transition: 0.125s ease-in-out;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  top: 20px;
+  cursor: pointer;
+}
+
+.details:hover{
+  background-color: white;
+  color:#14bf98 ;
+}
+.s3first {
+  display: flex;
+  height: 66vh;
+}
+.s3first img {
+  width: 50%;
+}
+.s3first-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 35%;
+  gap: 20px;
+  margin: auto;
+}
+.topic {
+  display: flex;
+  align-items: center;
+}
+.topic .h3-first {
+  color: #14bf98;
+}
+.s3first .span1 {
+  display: inline-block; 
+  width: 40px;         
+  height: 40px;          
+  border: 2px solid #14bf98 ;
+  background-color: #14bf98;
+  color: white; 
+  border-radius: 50%;     
+  text-align: center;     
+  line-height: 40px;   
+  font-weight: bold;
+  margin-right: 10px;
+}
+.topic1para {
+  margin-left: 50px;
+  padding-right: 20px;
+}
+.topic {
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+.s3first span {
+  display: inline-block; 
+  width: 40px;         
+  height: 40px;          
+  border: 2px solid black ; 
+  border-radius: 50%;     
+  text-align: center;     
+  line-height: 40px;   
+  font-weight: bold;
+  margin-right: 10px;
+  transition: border-color 0.3s ease;
+}
+.topic:hover {
+  color: #14bf98;
+  cursor: pointer;
+  & > span {
+    border-color: #14bf98;
+  }
+}
+.s3second {
+  display: flex;
+  height: 66vh;
+}
+.s3second-content {
+  display: inline-block;
+  padding: 100px;
+  width: 50%;
+}
+.s3second-content nav {
+  display: flex;
+  list-style: none;
+}
+.s3second-content li {
+  padding: 20px;
+  font-size: x-large;
+  cursor: pointer;
+  font-weight: 700;
+
+}
+#li1 {
+  color: #14bf98;
+}
+#li {
+  color: #9c9b9b;
+  transition: color 0.3s ease;
+}
+#li:hover {
+  color: #14bf98;
+}
+.s3second-content h3 {
+  padding: 20px;
+}
+.s3second-content .para {
+  padding-left: 20px;
+  font-family: sans-serif;
+  letter-spacing: 1.2px;
+  color: #777;
+
+  & > a {
+    color: #14bf98;
+  }
+}
+.bar-head {
+  color: black;
+  padding: 20px;
+  padding-bottom: 0;
+}
+.progress {
+  width: 500px;
+  background-color: #14bf98;
+  border: 1px solid #14bf98;
+  height: 20px;
+  margin-left: 20px;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+.s3second img {
+  width: 50%;
+}
+
+/* third part */
+
+.testimonials {
+  margin-top: 30px;
+  text-align: center;
+  padding: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.testimonials p {
+  color: #777;
+}
+
+.model-head {
+  margin: 0 auto;
+  padding: 0 75px;
+  width: 60%;
+  text-align: center;
+}
+.model-head h2 {
+  padding: 15px;
+}
+.model-head p {
+  line-height: 1.3;
+}
+.models {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 50px;
+}
+.model {
+  width: 300px;
+  height: 200px;
+}
+.model img {
+  width: 96px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding-bottom: 10px;
+}
+.model p {
+  font-size: 0.9rem;
+  font-style: italic;
+  padding-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+  color: #333; 
+  cursor: pointer;
+}
+
