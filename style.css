@@ -393,6 +393,7 @@ body {
 .topic1para {
   margin-left: 50px;
   padding-right: 20px;
+  color: #777;
 }
 .topic {
   display: flex;
